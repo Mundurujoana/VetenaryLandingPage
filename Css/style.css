@@ -463,4 +463,9 @@ h6,p{
     background: #abdde4;
     /* height: 500px; */
     margin: 20px;
+padding-right: 20px;
+}
+
+.rev-con{
+    display: flex;
 }
