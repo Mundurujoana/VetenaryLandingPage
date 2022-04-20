@@ -2,19 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Archivo+Black&family=Baloo+2:wght@500&family=Merriweather+Sans&family=Merriweather:wght@700&family=Poppins:wght@200;300;500;600;700;800&family=Roboto:wght@400;700&family=Updock&display=swap');
 
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
+overflow-x: hidden;
   }
 
 header{
     width: 100%;
     height: 98vh;
     position: relative;
-    background-color:#e7feff;
+    background-color:rgb(233,250,252);
 }
 
+
+/* Navigationbar */
 nav{
     padding-bottom: 1%;
     padding-top: 2%;
@@ -52,8 +55,7 @@ span{
     color: rgb(57, 26, 231);
 }
 
-
-
+/* introduction */
 .intro-container{
 padding-bottom: 2%;
 margin-left:8% ;
@@ -68,13 +70,13 @@ margin-left:8% ;
   top: 30px;
   right: 60px;
   background-color: rgb(228, 128, 13);
-  margin-left: 75px;
+  margin-left: 62px;
   margin-top: 70px;
   
 }
 
 .vet{
-margin-left: 80px;
+margin-left: 60px;
 color: rgb(228, 128, 13);
 font-size: 15px;
 }
@@ -82,15 +84,19 @@ font-size: 15px;
 .family{
     font-size: 40px;
     font-weight: bold;
+    margin-left:-5px;
+    color: rgb(48,47,62);
 }
 
 .duty{
     font-size: 20px;
     padding-top: -20px;
+    margin-left:-5px;
+    color: rgb(48,47,62);
 }
 
 .intro-container button{
-        background-color: #1e9b9b;
+        background-color: rgb(43,160,171);
         border: none;
         color: white;
         padding: 11px 28px;
@@ -138,9 +144,11 @@ color: #373636;
    margin-top: -40px;
 }
 
+
+/* Service */
 .services{
 	height:830px;
-	background-color:#effeff;
+	background-color:rgb(247,254,255)   ;
 }
 
 .services-text{
@@ -148,19 +156,19 @@ color: #373636;
 }
 
 .services-text p{
-	font-weight:bold;
-	color:#4b4a4a; 
+    font-size: 18px;
+	font-weight:600;
+	color:rgb(109,111,121);
     float: right;
-    margin-left: 40%;
+    margin-left: 35%;
     padding-top: 5%;
 }
 
 .services-text h1{
 font-size: 30px;
 margin-left: 20px;
-margin-left: 40px;
 padding-top: 5%;
-color: rgb(70, 67, 67);
+color: rgb(109,111,121);
 }
 
  .content-box{
@@ -191,19 +199,19 @@ font-size: 12px;
      padding:25px;
      margin: auto;
      margin-left: 7%;
-  
+     padding-bottom: 10px;
  }
 
  .card h3{
 font-size: 20px;
 color: rgb(54, 52, 52);
+
  }
 
  .card p{
-    font-size: 13px;
-    color: #413e3e;
+    font-size: 14px;
+    color: #4e4949;
      }
-
 
  .fa-solid{
      display: inline-block;
@@ -213,6 +221,8 @@ color: rgb(54, 52, 52);
      color: rgb(107, 130, 190);
  }
 
+ 
+   /* about-container */
 .about-container{
     display: flex;
     background: #e0ffff;
@@ -224,8 +234,7 @@ color: rgb(54, 52, 52);
     background-color: #b0e0e6;
     display: inline-block;
     border-radius: 3%;
-    margin-left:90px ;
-    /* margin-top: -70%; */
+    margin-left:120px ;
     margin-top: 50px ;
 
 }
@@ -238,15 +247,19 @@ color: rgb(54, 52, 52);
 }
 
 .about-text h2{
-    font-size: 30px;
+    padding-top: 5%;
+    margin-left: 10px;
+    font-size: 28px;
+    color: rgb(42,41,57);
 }
 
 .about-text p{
- color: rgb(75, 137, 218);
+ color: rgb(48, 48, 49);
+ font-size: 17px;
 }
 
 .about-text button{
-    background-color: #1e9b9b;
+    background-color: rgb(43,160,171);
     border: none;
     color: white;
     padding: 11px 28px;
@@ -257,15 +270,68 @@ color: rgb(54, 52, 52);
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;  
+    margin-left: 8px;
 }
 
 
-.doctors{
+   /* comments */
+.comments{
+    background: #f5ffff;
+    margin-top: -3%;
+    height: 700px;
+}
+.review{
+    background: #ffffff;
+    margin: 4px;
+padding-right: 20px;
+margin-top: -120px;
+height: 400px;
+}
+
+.rev-con{
+    display: flex;
+    margin-top: 190px;
+    padding-bottom: 50px;
+    padding: 20px;
+}
+
+.next{
+    font-size: 16px;
+    margin-left: 350px;
+    color: #1e9b9b;;
+    font-weight: bold;
+}
+
+.patients h3{
+    font-size: 30px;
+    padding-top:150px ;
+    margin-left: 30px;
+}
+
+.patients p{
+    font-size: 18px;
+    color: #5f5a5a;
+    float: right;
+    margin-top:-75px;
+    margin-right: 30px;
+}
+
+.review h2{
+    color: rgb(0, 0, 0);
+    margin-left: 12px;
+}
+
+.review p{
+    color: rgb(120, 120, 128);
+    margin-left: 12px;
+}
+
+/* .doctors{
     display: flex;
     background: #abdde4;
     height: 500px;
     margin: 20px;
-}
+} */
 
 .image-box img{
     display: inline-block;
@@ -285,16 +351,20 @@ color: rgb(54, 52, 52);
     justify-content: center;
     height: 50vh;
     width:80%;
-	background:#9edad7;
+	background:rgb(233,250,252);
 	border-radius:10px;
-	box-shadow:2px 2px 12px rgba(177, 225, 226, 0.2);
 	position: relative;
 	align-items: center;
     margin-left:5% ;
     padding: 2%;
-
-
 }
+
+.toy{
+    background-color: rgb(247,254,255);
+    height: 500px;
+    padding-top: 5%;
+}
+
 .subscribe h3{
     font-size: 40px;
     text-align: center;
@@ -303,7 +373,6 @@ color: rgb(54, 52, 52);
     padding:10px ;
     border-radius: 5px;
     background: #ececee;
-    box-shadow: 10px 10px 15px #c7c4c4, -10px -10px -15px  #fff;
 }
 
 .box input{
@@ -322,7 +391,7 @@ color: rgb(54, 52, 52);
     padding: 18px 14px;
     border: none;
     border-radius: 5px;
-    background: #528fb3;
+    background: rgb(43,160,171);
     cursor: pointer;
     transition: .3s;
 }
@@ -331,19 +400,150 @@ color: rgb(54, 52, 52);
       background: #b7f7f1;
   
   }
+
+
+  /* Veterinarians  */
+  .personnel{
+    background: rgb(247,254,255);
+    margin-top: -40px;
+}
+
+.personnel h1{
+    text-align: left;
+    font-size: 45px;
+    padding-top: 4%;
+    padding-left: 40px;
+}
+
+.personnel .all{
+    float: right;
+margin-right: 200px;
+margin-top: -70px;
+ 
+}
+.members{
+    display: flex;
+    padding-top: -60px;
+    margin-left: 0px;
+    
+}
+
+.team-ab2 img{
+    width: 380px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 2%;
+    background-color: rgb(244,240,253);
+}
+
+.team-ab2 h6{
+    margin-top: -3%;
+margin-left: 7%;
+font-size: 18px;
+color: rgb(72, 72, 77)
+}
+.team-ab2 p{
+    margin-top: -8%;
+    margin-left: 7%;
+    font-size: 15px;
+    color: rgb(66, 66, 68);
+    }
+    
+
+.team-ab1 img{
+    width: 380px;
+    height: 300px;
+    border-radius: 2%;
+    margin: 25px;
+    background-color: rgb(226,253,254);
+}
+
+.team-ab1 h6{
+    margin-top: -3%;
+    margin-left: 7%;
+    font-size: 18px;
+    color: rgb(72, 72, 77)
+    }
+    .team-ab1 p{
+        margin-top: -8%;
+        margin-left: 7%;
+        font-size: 15px;
+        color: rgb(66, 66, 68);
+        }
+
+
+.team-ab3 img{
+    width: 380px;
+    height: 300px;
+    border-radius: 2%;
+    margin: 25px;
+    background-color: rgb(255,245,240)
+}
+
+.team-ab3 h6{
+    margin-top: -3%;
+    margin-left: 7%;
+    font-size: 18px;
+    color: rgb(72, 72, 77)
+    }
+    .team-ab3 p{
+        margin-top: -8%;
+        margin-left: 7%;
+        font-size: 15px;
+        color: rgb(66, 66, 68);
+        }
+
+
+.black{
+    display: flex;
+}
+.black .name{
+font-size: 15px;
+margin-left: 10px;
+}
+
+.black .job{
+font-size: 12px;
+margin-left: 12px;
+}
+
+.star{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-5 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 90%;
+    margin-left: 10px;
+}
+.fa-star{
+    color: rgb(251,153,80);
+margin: 4px;
+}
+
+.star p{
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+
+/* footer */
 .footer{
     /* margin-top:5% ; */
 }
-  .container{
-      background-color: rgb(202, 243, 241);
+  .footer-container{
+      background-color: rgb(247,254,255);
       margin: auto;
       height: 380px;
   }
 
-  .row{
+  .footer-row{
       display: flex;
       flex-wrap: wrap;
   }
+
   ul{
       list-style: none;
   }
@@ -365,145 +565,14 @@ color: rgb(54, 52, 52);
 
   .footer-column ul li a{
       font-size: 15px;
-padding: 5px;
+       padding: 5px;
       text-decoration: none;
       font-weight: 500;
       color: #444040;
       display: block;
-     
   }
 
-  .personnel{
-    background: rgb(206, 239, 241);
-    /* width: ; */
-    /* border-radius: 15px; */
-    padding: 20px;
-    box-shadow: 10px 10px 15px rgba(0.0.0.0.4);
-}
 
-.personnel h1{
-    text-align: left;
-    font-size: 50px;
-    padding-top: 4%;
-   padding-left: 70px;
-}
-.members{
-    display: flex;
-    margin-top: 60px;
-}
-
-.team-men{
-    margin: 5px;
-}
-
-.team-men img{
-    width: 400px;
-    height: 350px;
-    border-radius: 2%;
-    background-color: rgb(192, 235, 238);
-}
-
-h6,p{
-    text-align: left;
-    font-size: 15px;
-    margin-left: 3px;
-}
-
-.toy{
-    background-color: #d1eaf0;
-    height: 500px;
-    padding-top: 5%;
-}
-
-.footer-column .media{
-    text-decoration: none;
-    padding-right: -50px;
-}
-
-.star{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.image-5 img{
-    height: 50px;
-    width: 50px;
-    border-radius: 90%;
-    margin-left: 10px;
-}
-
-.black{
-    display: flex;
-}
-.black .name{
-font-size: 15px;
-margin-left: 10px;
-}
-
-.black .job{
-font-size: 12px;
-margin-left: 12px;
-}
-
-.fa-star{
-    color: rgb(194, 155, 26);
-margin: 4px;
-}
-
-.star p{
-    margin-top: 3px;
-    margin-left: 20px;
-}
-
-
-.comments{
-    background: #abdde4;
-    margin-top: -2%;
-    height: 700px;
-}
-.review{
-    background: #dfdfdf;
-    margin: 4px;
-padding-right: 20px;
-margin-top: -120px;
-height: 400px;
-}
-
-.rev-con{
-    display: flex;
-    margin-top: 190px;
-    padding-bottom: 50px;
-    padding: 20px;
-}
-.patients h3{
-    font-size: 25px;
-    padding-top:150px ;
-}
-
-.patients p{
-    float: right;
-    margin-top:-60px;
-}
-
-.review h2{
-    color: rgb(0, 0, 0);
-    margin-left: 12px;
-}
-
-.review p{
-    color: rgb(118, 117, 209);
-    margin-left: 12px;
-}
-
-.fa-brands{
-   margin: 10px;
-    color: #ffffff;
-    display: inline-block;
-    background-color: rgb(73, 156, 189);
-    border-radius: 10px;
-    padding: 5px;
-    /* padding-left: 10px; */
-}
 .fa-twitter{
     background-color: rgb(73, 156, 189);
     border-radius: 20px;
@@ -518,7 +587,7 @@ height: 400px;
 
 .fa-facebook-f{
     background-color: rgb(8, 57, 104);
-    border-radius: 40px;
+    border-radius: 60px;
     display: inline-block;
 }
 
@@ -528,17 +597,55 @@ height: 400px;
     display: inline-block;
 }
 
-.media{
-    margin-left: 35px;
+.footer-column .media{
+    text-decoration: none;
+    padding-right: -50px;
 }
+
+.fa-brands{
+    margin: 10px;
+     color: #ffffff;
+     display: inline-block;
+     border-radius: 20px;
+     padding: 5px;
+ }
 
 .solid-2{    
 display: inline-block;
 border-radius: 50%;
-/* background-color: #f1fffe; */
-/* padding: 20px; */
 color: rgb(107, 130, 190);   
 font-size: 30px;
 margin-left: 10px;
 margin-top: 10px;
+}
+
+.media p{
+    text-align: left;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.media{
+    margin-right: -50px;
+}
+
+.fa-arrow-right{
+    background: none;
+    color: rgb(49,167,178);
+}
+.fa-quote-left{
+    background: none;
+    color: rgb(233,250,252);
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.see{
+    float: right;
+    margin-top: -8%;
+    margin-right: 50px;
+    color: rgb(72,178,188);
+    font-size: 15px;
+    font-weight: bold;
 }
